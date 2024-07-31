@@ -20,7 +20,6 @@ const Sidebar = () => {
   ]);
 
   const {
-    keyWord,
     maxPrice,
     minPrice,
     searchQuery,
@@ -121,13 +120,13 @@ const Sidebar = () => {
         <div className="mb-5 mt-4">
           <h2 className="text-xl font-semibold mb-3">Key word</h2>
           <div>
-            {keywords.map((keyword, index) => (
+            {keywords.map((keywordd, index) => (
               <button
-                onClick={() => handleKeyWord(keyWord)}
+                onClick={() => handleKeyWord(keywordd)}
                 key={index}
                 className="block nb2
                px-4 pt-2 w-full border">
-                {keyword.toUpperCase()}
+                {keywordd.toUpperCase()}
               </button>
             ))}
           </div>
